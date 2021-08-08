@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/Components/Content/Content.module.css"],"names":[],"mappings":"AAAA,wBACE,SAAU,CACV,gBAAiB,CACjB,iBAAkB,CAClB,iBAAkB,CAClB,sBACF","file":"5.2210a688.chunk.css","sourcesContent":[".Content {\n  width: 50%;\n  margin: 20px auto;\n  padding: 30px 15px;\n  text-align: center;\n  background-color: wheat;\n}\n"]}
