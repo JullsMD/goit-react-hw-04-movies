@@ -1,0 +1,19 @@
+.NavList {
+  list-style: none;
+  display: flex;
+}
+.NavLink {
+  padding: 7px;
+  margin-right: 20px;
+  transition: 500ms color ease-in-out;
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  border: 4px dashed transparent;
+  border-radius: 10px;
+  font-size: 22px;
+}
+.NavLink:hover,
+.NavLink:active {
+  border: 4px dashed red;
+  border-radius: 10px;
+}
