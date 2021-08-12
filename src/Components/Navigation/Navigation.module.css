@@ -3,16 +3,18 @@
   display: flex;
 }
 .NavLink {
-  padding: 7px;
+  padding: 4px;
   margin-right: 20px;
-  transition: 500ms color ease-in-out;
+  transition: 500ms all ease-in-out;
   font-family: 'Press Start 2P', cursive;
   color: white;
   border: 4px dashed transparent;
   border-radius: 10px;
-  font-size: 22px;
+  font-size: 25px;
+  line-height: 0.8;
 }
 .NavLink:hover,
+.NavLink:focus,
 .NavLink:active {
   border: 4px dashed red;
   border-radius: 10px;

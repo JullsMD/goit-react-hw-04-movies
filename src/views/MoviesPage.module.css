@@ -1,0 +1,14 @@
+.formInput {
+  width: 300px;
+}
+.formButton {
+  background-color: transparent;
+  margin-left: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.formButton:hover {
+  color: red;
+  border-color: red;
+  cursor: pointer;
+}

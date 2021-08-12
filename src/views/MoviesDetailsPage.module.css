@@ -1,0 +1,18 @@
+.btn {
+  width: 25%;
+  padding: 10px;
+  margin-bottom: 25px;
+  border: 4px dashed white;
+  border-radius: 10px;
+  color: black;
+  background-color: transparent;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 20px;
+  font-weight: 900;
+}
+.btn:hover,
+.btn:focus,
+.btn:active {
+  color: red;
+  border-color: red;
+}

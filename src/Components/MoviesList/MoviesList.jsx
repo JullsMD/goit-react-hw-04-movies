@@ -1,13 +1,15 @@
 import { Link, withRouter } from 'react-router-dom';
 import routes from '../../routes';
 import PropTypes from 'prop-types';
+import styles from './MoviesList.module.css';
 
 const MoviesList = ({ movies, location }) => {
   return (
-    <ul>
+    <ul className={styles.MoviesList}>
       {movies.map(({ id, title }) => (
         <li key={id}>
           <Link
+            className={styles.MoviesListLink}
             to={{
               pathname: `${routes.movies}/${id}`,
               state: { from: location },

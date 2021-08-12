@@ -1,0 +1,37 @@
+.MoviesCard {
+  display: flex;
+  flex-wrap: wrap;
+}
+.imgThumb {
+  display: inline-block;
+  background-color: #000;
+}
+.imgDescr {
+  max-width: 400px;
+  margin-left: 20px;
+  display: inline-block;
+  color: black;
+}
+.genre {
+  margin-right: 10px;
+}
+.addInfo {
+  display: block;
+  width: 100%;
+}
+.castRev {
+  text-decoration: none;
+  padding: 0 250px;
+  display: flex;
+  justify-content: space-between;
+
+  font-family: 'Press Start 2P', cursive;
+  font-size: 15px;
+  color: white;
+}
+
+.castRev:hover,
+.castRev:focus,
+.castRev:active {
+  color: red;
+}

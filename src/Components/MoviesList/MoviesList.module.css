@@ -1,0 +1,19 @@
+.MoviesList {
+  padding: 20px 0;
+  background-color: whitesmoke;
+  border: 4px dashed red;
+}
+
+.MoviesListLink {
+  display: block;
+  color: black;
+  font-size: 30px;
+  transition: 50ms all ease-in-out;
+}
+
+.MoviesListLink:hover,
+.MoviesListLink:focus,
+.MoviesListLink:active {
+  color: red;
+  outline: 4px dashed red;
+}

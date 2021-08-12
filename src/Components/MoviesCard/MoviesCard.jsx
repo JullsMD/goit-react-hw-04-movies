@@ -4,12 +4,13 @@ import PropTypes from 'prop-types';
 import Cast from '../Cast';
 import Reviews from '../Reviews';
 import default_Img from '../../Images/default_Img.png';
+import styles from './MoviesCard.module.css';
 
 const MovieCard = ({ movie, match, location }) => {
   return (
-    <div>
+    <div className={styles.MoviesCard}>
       {/* Image */}
-      <div>
+      <div className={styles.imgThumb}>
         {movie.poster_path ? (
           <img
             src={`${routes.imgUrl}${movie?.poster_path}`}
@@ -21,7 +22,7 @@ const MovieCard = ({ movie, match, location }) => {
         )}
       </div>
       {/* Description */}
-      <div>
+      <div className={styles.imgDescr}>
         <h2>
           {movie?.title} ({movie?.release_date.slice(0, 4)})
         </h2>
@@ -31,30 +32,34 @@ const MovieCard = ({ movie, match, location }) => {
         <h4>Genres</h4>
         <p>
           {movie?.genres.map(({ name, id }) => (
-            <span key={id}>{name} </span>
+            <span className={styles.genre} key={id}>
+              {name}{' '}
+            </span>
           ))}
         </p>
       </div>
 
-      <div>
+      <div className={styles.addInfo}>
         <h2>Additional information</h2>
-        <NavLink
-          to={{
-            pathname: `${match.url}${routes.cast}`,
-            state: { from: location.state.from },
-          }}
-        >
-          Cast
-        </NavLink>
+        <div className={styles.castRev}>
+          <NavLink
+            to={{
+              pathname: `${match.url}${routes.cast}`,
+              state: { from: location.state.from },
+            }}
+          >
+            Cast
+          </NavLink>
 
-        <NavLink
-          to={{
-            pathname: `${match.url}${routes.reviews}`,
-            state: { from: location.state.from },
-          }}
-        >
-          Reviews
-        </NavLink>
+          <NavLink
+            to={{
+              pathname: `${match.url}${routes.reviews}`,
+              state: { from: location.state.from },
+            }}
+          >
+            Reviews
+          </NavLink>
+        </div>
       </div>
 
       <Route path={`${match.path}${routes.cast}`} component={Cast} />

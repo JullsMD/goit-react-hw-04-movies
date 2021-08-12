@@ -16,7 +16,7 @@ function App() {
     <div>
       <NavBar />
       <Suspense
-        fallback={<Loader type="Rings" color="#FFF" height={80} width={80} />}
+        fallback={<Loader type="Rings" color="red" height={100} width={100} />}
       >
         <Switch>
           <Route exact path={routes.home} component={HomePage} />

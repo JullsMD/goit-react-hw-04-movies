@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { withRouter } from 'react-router-dom';
 import { getMovieInfoById } from '../../Services/API';
-
+import styles from './Reviews.module.css';
 const Reviews = ({ match }) => {
   const [reviewsList, setReviewsList] = useState([]);
 
@@ -26,7 +26,7 @@ const Reviews = ({ match }) => {
           ))}
         </ul>
       ) : (
-        <p>Your review will be first</p>
+        <p className={styles.noRev}>Your review will be first</p>
       )}
     </>
   );

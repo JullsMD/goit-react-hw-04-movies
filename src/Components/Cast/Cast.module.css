@@ -1,0 +1,18 @@
+.CastList {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.CastListItem {
+  width: 25%;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px dashed white;
+}
+.CastTitle {
+  font-style: 10px;
+}

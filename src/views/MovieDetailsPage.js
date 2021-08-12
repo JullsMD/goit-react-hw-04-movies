@@ -3,6 +3,7 @@ import { getMovieById } from '../Services/API';
 import routes from '../routes';
 import Content from '../Components/Content';
 import MoviesCard from '../Components/MoviesCard';
+import styles from './MoviesDetailsPage.module.css';
 import Loader from 'react-loader-spinner';
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
 
@@ -21,7 +22,7 @@ const MovieDetailsPage = ({ match, history, location }) => {
 
   return (
     <Content>
-      <button type="button" onClick={handleGoBack}>
+      <button type="button" className={styles.btn} onClick={handleGoBack}>
         Go back
       </button>
       {movie?.title ? (
